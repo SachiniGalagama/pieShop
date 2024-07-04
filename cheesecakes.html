@@ -9,19 +9,31 @@
 <body>
   <header>
     <nav>
-      <div class="nav-bar">
-        <div class="logo">
-            <img src="bethanylogo.png" alt="logo">
-            <h2>bethany's Pie Shop</h2> 
-        </div>
-        
-        <div class="pages">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="allpies.html">All pies</a>
-        </div>
-    </div>
-    </nav>
+      <div class="logo">
+          <img src="bethanylogo.png" alt="logo">
+          <h2>bethany's Pie Shop</h2> 
+      </div>
+        <ul class="pages">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="allpies.html">All pies</a></li>
+        </ul>
+      <div class="menu" onclick=showsideBar()>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="sideBar">
+        <li onclick=hidesideBar()><img src="close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt=""></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="allpies.html">All pies</a></li>
+        <li><a href="cheesecakes.html">Cheese cakes</a></li>
+        <li><a href="fruitpies.html">Fruit pies</a></li>
+        <li><a href="seasonalpies.html">Seasonal pies</a></li>
+        <li><a href="#promotions">Promotions</a></li>
+      </ul>
+  </nav>
   </header>
   <div>
     <aside id="side-bar">
@@ -41,7 +53,7 @@
       <header>
         <h2>Our cheesecake collection for you!</h2>
       </header>
-      <table border="1" style="border: 1px solid white; width: 100%;">
+      <table id="table1" >
         <thead>
           <tr>
             <th>Image</th>
@@ -49,7 +61,8 @@
             <th>Description</th>
             <th>Price</th>
             <th>Details</th>
-        </tr>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td><img src="cheesecakesmall.jpg" width="100"></td>
@@ -59,8 +72,8 @@
             <td>View details</td>
         </tr>
         <tr>
-            <td><img src="cheesecakesmall.jpg" width="100"></td>
-            <td>Cheese cake</td>
+            <td><img src="blueberrycheesecakesmall.jpg" width="100"></td>
+            <td>BlueberryCheese cake</td>
             <td>Plain cheese cake. Plain pleasure.</td>
             <td>$12.95</td>
             <td>View details</td>
@@ -73,7 +86,32 @@
             <td>View details</td>
         </tr>
         </tbody>
+      </table>
+      <table id="table2">
+        <thead>
+          <tr>
+            <th>Pie name</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
         </thead>
+        <tbody>
+          <tr>
+            <td><img src="cheesecakesmall.jpg" width="100">Cheese cake</td>
+            <td>Plain cheese cake. Plain pleasure. <br> <a href="#">View details</a></td>
+            <td>$12.95</td>
+          </tr>
+        <tr>
+          <td><img src="cheesecakesmall.jpg" width="100">Cheese cake</td>
+          <td>Plain cheese cake. Plain pleasure. <br> <a href="#">View details</a></td>
+          <td>$12.95</td>
+        </tr>
+        <tr>
+          <td><img src="cheesecakesmall.jpg" width="100">Cheese cake</td>
+          <td>Plain cheese cake. Plain pleasure. <br> <a href="#">View details</a></td>
+          <td>$12.95</td>
+        </tr>
+        </tbody>
       </table>
     </main>
   </div>
@@ -82,5 +120,6 @@
     <p>Contact us via <a href="mailto:info@bethanyspieshop.com">email</a></p>
     <p style="text-align: center;"><small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small></p>
 </footer>
+<script src="pieShop.js"></script>
 </body>
 </html>
